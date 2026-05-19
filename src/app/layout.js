@@ -6,7 +6,7 @@ export const metadata = {
   keywords: ['cryptocurrency', 'crypto prices', 'bitcoin price', 'ethereum price', 'live crypto market', 'crypto tracker', 'altcoin prices', 'market cap', 'crypto pulse'],
   authors: [{ name: 'CryptoPulse' }],
   other: {
-    'google-site-verification': 'google27fcd6f303a9589c'
+    'google-adsense-account': 'ca-pub-7322019754286753'
   },
   robots: {
     index: true,
