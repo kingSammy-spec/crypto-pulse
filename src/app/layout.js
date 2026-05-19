@@ -1,5 +1,6 @@
-export const metadata = {
 import Script from 'next/script';
+
+export const metadata = {
   title: 'CryptoPulse | Live Cryptocurrency Market Data & Prices',
   description: 'Track real-time cryptocurrency prices, 24h changes, market cap, and volume across Bitcoin, Ethereum, and thousands of altcoins. Live data, zero delay.',
   keywords: ['cryptocurrency', 'crypto prices', 'bitcoin price', 'ethereum price', 'live crypto market', 'crypto tracker', 'altcoin prices', 'market cap', 'crypto pulse'],
@@ -31,12 +32,14 @@ import Script from 'next/script';
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}      <Script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7322019754286753"
-        crossOrigin="anonymous"
-        strategy="afterInteractive"
-      />
+      <body>
+        {children}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7322019754286753"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
