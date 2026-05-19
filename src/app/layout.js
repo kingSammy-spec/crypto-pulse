@@ -5,8 +5,8 @@ export const metadata = {
   description: 'Track real-time cryptocurrency prices, 24h changes, market cap, and volume across Bitcoin, Ethereum, and thousands of altcoins. Live data, zero delay.',
   keywords: ['cryptocurrency', 'crypto prices', 'bitcoin price', 'ethereum price', 'live crypto market', 'crypto tracker', 'altcoin prices', 'market cap', 'crypto pulse'],
   authors: [{ name: 'CryptoPulse' }],
-  verification: {
-    google: 'google27fcd6f303a9589c'
+  other: {
+    'google-site-verification': 'google27fcd6f303a9589c'
   },
   robots: {
     index: true,
