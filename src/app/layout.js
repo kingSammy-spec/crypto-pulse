@@ -33,8 +33,31 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CryptoPulse",
+    "description": "Track real-time cryptocurrency prices, 24h changes, market cap, and volume across Bitcoin, Ethereum, and thousands of altcoins.",
+    "url": "https://crypto-pulse.vercel.app",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://crypto-pulse.vercel.app?search={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body>
         {children}
         <Script
